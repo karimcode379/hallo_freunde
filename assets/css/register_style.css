@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Mochiy Pop One';
+    src: url('../fonts/Mochiy_Pop_One/MochiyPopOne-Regular.ttf');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-image: url("../img/backgrounds/login_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #634f50;
+}
+
+form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+    width: 70%;
+    height: 3rem;
+    border: 1px solid darkgrey;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="email"]:hover,
+form input[type="password"]:hover,
+form input[type="text"]:hover {
+    border: 2px solid #a58586;
+}
+
+form input[type="submit"] {
+    color: #fffff3de;
+    font-size: 1.4rem;
+    background-color: #a58586;
+    border: 1px solid #a58586;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+form input[type="submit"]:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+form a {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.login-box {
+    font-family: 'Mochiy Pop One', sans-serif;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 7px;
+    padding: 5px;
+    opacity: .97;
+}
+
+.login-header {
+    max-width: 100%;
+    padding: 10px;
+    background-color: #81667A;
+    color: #fffff3a8;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-size: 1.4rem;
+}
+
+.login-header h1 {
+    margin: 0;
+    color: #fffffada;
+    text-shadow: #a58586 1.5px 1.5px 1px;
+}
+
+#second-form {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .login-box {
+        width: 70%;
+    }
+}
